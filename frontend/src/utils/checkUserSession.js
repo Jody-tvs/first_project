@@ -31,7 +31,8 @@ const checkUserSession = async () => {
     console.error("Erreur lors de la vérification du token", err)
    //si l'erreur vient du fait que le token n'est pas valide 
    if (err.response && err.response.status === 401) {
-
+    localStorage.removeItem('token');
+    localStorage.removeItem('user');
     return {
       isAuthenticated: false, //l'utilisateur n'est pas authentifié
       isAdmin: false //l'utilisateur n'est pas un admin

@@ -2,7 +2,7 @@ import React from 'react'
 import { useSelector, useDispatch } from 'react-redux'
 import { clearBasket, removeFromBasket, updateItemQuantity } from '../../slices/basketSlice'
 import { useNavigate } from 'react-router-dom'
-import '../../styles/basket.scss'
+import "@styles/pages/pages.scss"
 
 function Basket() {
   const navigate = useNavigate() //permet la navigation vers d'autres pages
@@ -41,7 +41,7 @@ function Basket() {
             <div key={item.id} className="basket-item">
               <img src={`http://localhost:9500/public/images/${item.picture}`} alt={item.alt} />
               <div className="details">
-                <h3>{item.name}</h3>
+                <h2>{item.name}</h2>
                 <div className="price-quantity">
                   <p className="price">Prix : {item.price} €</p>
                   <div className="quantity">

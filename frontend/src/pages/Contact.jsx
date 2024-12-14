@@ -1,6 +1,6 @@
 import React, { useState } from 'react' //import des modules nécessaire à la gestion des états et composants React
 import axios from 'axios' //import d'axios pour effectuer des requêtes HTTP vers le serveur
-import '../styles/Contact.scss'
+import "@styles/pages/pages.scss"
 
 function Contact() {
     //on déclare les états pour gerer les champs du formulaire et les messages d'erreur et succès

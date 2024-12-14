@@ -1,6 +1,6 @@
 import React from 'react'
 import Carousel from 'react-bootstrap/Carousel'
-import '../styles/Home.scss'
+import "@styles/pages/pages.scss"
 
 function Home() {
     //images dans public/images afficher sur l'accueil

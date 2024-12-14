@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { useParams, useNavigate } from 'react-router-dom'
 import axios from 'axios'
-import '../../styles/AddProduct.scss'
+import "@styles/pages/pages.scss"
 
 const AddProduct = () => {
   const navigate = useNavigate()

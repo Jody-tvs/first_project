@@ -4,7 +4,7 @@ import { useDispatch } from 'react-redux'
 import axios from 'axios'
 import { AuthContext } from '../../context/AuthContext'
 import { login as loginAction } from '../../slices/authSlice'
-import '../../styles/Login.scss'
+import "@styles/pages/pages.scss"
 
 function Login() {
   //état pour gérer l'email le mot de passe l'affichage du mot de passe et les messages d'erreur

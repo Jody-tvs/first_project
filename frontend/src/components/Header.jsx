@@ -6,7 +6,7 @@ import { faShoppingCart } from '@fortawesome/free-solid-svg-icons'
 import { clearBasket } from '../slices/basketSlice'
 import { logout } from '../slices/authSlice' 
 import logo from '/logo/logo.png'
-import '../styles/header.scss'
+import "@styles/layout/layout.scss"
 
 function Header() {
   const navigate = useNavigate() //hook pour la navigation entre les pages

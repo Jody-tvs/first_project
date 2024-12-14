@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
 import axios from 'axios'
 import { useParams } from 'react-router-dom'
-import '../../styles/EditProduct.scss'
+import "@styles/pages/pages.scss"
 
 const EditProduct = () => {
   const navigate = useNavigate() //initialisation de useNavigate pour la redirection

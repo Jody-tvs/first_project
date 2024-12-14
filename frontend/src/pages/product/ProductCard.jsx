@@ -1,10 +1,11 @@
 import React from 'react'
 import Carousel from 'react-bootstrap/Carousel'
+import "@styles/pages/pages.scss"
 
-//le composant reçoit un objet product en tant que prop contenant les informations du produit
+//le composant reçoit un objet product en tant que prop contenant les infos du produit
 function ProductCard({ product }) {
   //URL du back pour accéder aux images stocker dans le répertoire public
-  const backendURL = 'http://localhost:9500/public/images/'
+  
 
   return (
     <div className="product-card">

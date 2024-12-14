@@ -4,8 +4,7 @@ import axios from 'axios'
 import { useDispatch, useSelector } from 'react-redux'
 import { addToBasket } from '../slices/basketSlice'
 import ProductCarousel from '../components/ProductCarousel'
-import '@styles/ProductCarousel.scss'
-import '@styles/CategoryPage.scss'
+import "@styles/pages/pages.scss"
 
 function CategoryPage() {
   const { category } = useParams() 
@@ -66,7 +65,7 @@ function CategoryPage() {
         <div className="product-grid">
           {products.map((product) => (
             <div key={product.id} className="product-card">
-              <h3>{product.name}</h3>
+              <h2>{product.name}</h2>
 
               {/* lorsque l'utilisateur clique sur un produit il est redirigé vers les détails du produit */}
               <div onClick={() => handleNavigateToDetails(product.id)}>

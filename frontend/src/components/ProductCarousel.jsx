@@ -1,6 +1,6 @@
 import React from 'react'
 import Carousel from 'react-bootstrap/Carousel'
-import '@styles/ProductCarousel.scss'
+import "@styles/pages/pages.scss"
 
 const ProductCarousel = ({ mainImage, secondaryImages, altText }) => {
   const backendURL = 'http://localhost:9500/public/images/'

@@ -2,8 +2,9 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { Provider } from 'react-redux'
 import { store } from './store'
-import App from './App'
 import 'bootstrap/dist/css/bootstrap.min.css'
+
+import App from './App'
 
 //ajoute un événement pour s'assurer que le DOM est entièrement chargé avant d'exécuter le script
 document.addEventListener('DOMContentLoaded', () => {

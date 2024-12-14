@@ -4,7 +4,7 @@ import axios from 'axios'
 import { useDispatch } from 'react-redux'
 import { addToBasket } from '../../slices/basketSlice'
 import ProductCarousel from '../../components/ProductCarousel'
-import '../../styles/ProductDetail.scss'
+import "@styles/pages/pages.scss"
 
 function ProductDetail() {
   const { id } = useParams() //extraction de l'id du produit à partir des paramètres de l'URL

@@ -16,7 +16,7 @@ app.use(fileUpload({
 }))
 
 //parse les URL encoder et JSON
-app.use(express.urlencoded({extended: true}))
+app.use(express.urlencoded({extended: false}))
 app.use(express.json())
 
 //défini le répertoir public pour les fichiers statique

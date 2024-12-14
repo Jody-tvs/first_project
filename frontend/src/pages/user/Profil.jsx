@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import axios from 'axios'
-import '../../styles/Profil.scss'
+import "@styles/pages/pages.scss"
 import { useNavigate } from 'react-router-dom'
 
 function Profil() {

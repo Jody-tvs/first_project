@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import axios from 'axios'
-import '../../styles/AdminOrder.scss';
+import "@styles/pages/pages.scss"
 
 const AdminOrders = () => {
   const navigate = useNavigate()

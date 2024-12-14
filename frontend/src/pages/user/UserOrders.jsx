@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import axios from 'axios'
 import { useSelector } from 'react-redux'
-import '../../styles/UserOrders.scss'
+import "@styles/pages/pages.scss"
 
 function UserOrders() {
   const [orders, setOrders] = useState([]) //stock les commandes de l'utilisateur

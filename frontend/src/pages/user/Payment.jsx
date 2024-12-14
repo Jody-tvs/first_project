@@ -2,7 +2,7 @@ import React from 'react'
 import { loadStripe } from '@stripe/stripe-js'
 import { Elements } from '@stripe/react-stripe-js'
 import CheckoutForm from "../../components/CheckoutForm"
-import '../../styles/Payment.scss'
+import "@styles/pages/pages.scss"
 
 //clé publique stripe 
 const stripePromise = loadStripe('pk_test_51PdtKNRswFkUPgM7BBLdi5zLQU4X1tDUXo1VkMT05Jt3M3k00vpvdYOadZNjNB3ib6Ufm1tmRcyc7SjutvUkSGhj00XFT8Vepf')

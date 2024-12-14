@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import axios from 'axios'
 import { Link, useNavigate } from 'react-router-dom'
-import '../../styles/AdminProducts.scss'
+import "@styles/pages/pages.scss"
 
 const AdminProducts = () => {
   //état pour stocker les produits, l'état de chargement et les erreurs
