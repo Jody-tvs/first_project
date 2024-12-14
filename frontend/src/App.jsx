@@ -28,15 +28,15 @@ import Payment from './pages/user/Payment'
 import Success from './pages/Success'
 
 function App() {
-  const dispatch = useDispatch(); // permet d'envoyer des actions à Redux
-  const { user } = useSelector((state) => state.auth); // sélectionne les infos de l'utilisateur dans le store Redux
+  const dispatch = useDispatch() //permet d'envoyer des actions à Redux
+  const { user } = useSelector((state) => state.auth) //sélectionne les infos de l'utilisateur dans le store Redux
 
-  // effet qui s'exécute après la connexion d'un utilisateur
+  //effet qui s'exécute après la connexion d'un utilisateur
   useEffect(() => {
     if (user) {
-      // action à exécuter après la connexion de l'utilisateur
+      //action à exécuter après la connexion de l'utilisateur
     }
-  }, [user, dispatch]); // hook useEffect se déclenche à chaque fois que user ou dispatch change
+  }, [user, dispatch]) //hook useEffect se déclenche à chaque fois que user ou dispatch change
 
   return (
     <AuthProvider>
@@ -58,7 +58,7 @@ function App() {
   <Route path="/payment" element={<Payment />} />
   <Route path="/success" element={<Success />} />
 
-  {/* Routes admin protégées */}
+  {/* routes admin protégées */}
   <Route
     path="/admin/dashboard"
     element={
@@ -121,7 +121,7 @@ function App() {
         </div>
       </Router>
     </AuthProvider>
-  );
+  )
 }
 
-export default App;
+export default App
